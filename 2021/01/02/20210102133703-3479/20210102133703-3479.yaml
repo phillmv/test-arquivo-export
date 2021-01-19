@@ -1,0 +1,58 @@
+---
+body: "#gitsync \r\n\r\ngit/config\r\n```\r\n[merge \"last-in-wins\"]\r\n  name =
+  last in wins\r\n  driver = /usr/local/bin/chruby-exec ruby-2.6.5 -- ruby /tmp/merger.rb
+  %O %A %B %L %P\r\n  recursive = text\r\n```\r\n\r\nhttps://git-scm.com/docs/gitattributes#_defining_a_custom_merge_driver\r\n\r\nalso
+  git pull --no-edit\r\n\r\n(gotta write the winner to the location in `%A`\r\n```\r\nrequire
+  'pry'\r\nrequire 'yaml'\r\nrequire 'active_support/time_with_zone'\r\n\r\nours =
+  [YAML.load_file(ARGV[1]), ARGV[1]]\r\ntheirs = [YAML.load_file(ARGV[2]), ARGV[2]]\r\n\r\nwinner
+  = [ours,theirs].sort_by { |attr, file| attr[\"updated_at\"] }.last[1]\r\n\r\nFileUtils.cp(winner[1],
+  ARGV[1]) unless winner == ARGV[1]\r\nexit 0\r\n```\r\n\r\nissues to resolve:\r\n\r\nauto
+  installing this custom merger in the git repos\r\nreliably fucking executing it
+  jfc is another issue\r\n\r\nhttps://stackoverflow.com/questions/7607125/git-merge-conflict-to-always-take-the-newest-file\r\n\r\n```\r\n#!/bin/sh\r\nif
+  git merge-file -p -q \"$2\" \"$1\" \"$3\" > /dev/null;\r\n        then git merge-file
+  \"$2\" \"$1\" \"$3\";\r\n        else\r\n                MINE=$(git log --format=\"%ct\"
+  --no-merges \"$6\" -1 $5);\r\n                THEIRS=$(git log --format=\"%ct\"
+  --no-merges \"$7\" -1 $5);\r\n                if [ $MINE -gt $THEIRS ]; then\r\n
+  \                 git merge-file -q --ours \"$2\" \"$1\" \"$3\" >/dev/null\r\n                else\r\n
+  \                 git merge-file -q --theirs \"$2\" \"$1\" \"$3\">/dev/null\r\n
+  \               fi\r\nfi\r\n```\r\n\r\n`git-merge-newest %O %A %B %L %P $HEAD $1`\r\n\r\n```\r\n[merge
+  \"newest\"]\r\n  name = foo\r\n  driver = /usr/local/bin/chruby-exec ruby-2.6.5
+  -- ruby /tmp/pry.rb %O %A %B %L %P `git rev-parse --abbrev-ref HEAD` $1\r\n  recursive
+  = text\r\n```\r\n\r\n---\r\n\r\nokay so i have a few options here.\r\n\r\ni need
+  to run merge and if it conflicts pick the most recent one.\r\n\r\n- pick between
+  ruby and shell\r\n- pick between using git log time, file mtime, or entry updated_at\r\n
+  \ - actually, [looks like file mtime in git is unreliable](https://git.wiki.kernel.org/index.php/GitFaq#Why_isn.27t_Git_preserving_modification_time_on_files.3F)?\r\n
+  \ - problem: git log time only has second resolution, which breaks tests\r\n  -
+  on the other time, could just use ruby\r\n    - problem there: limited in what code
+  can be used in ad hoc git repo installs. i.e. right now entry dumps depends on active_support/time_with_zone\r\n\r\nmight
+  have to redo how entry yaml is generated to eschew time_with_zone, so that i can
+  just `require 'yaml'` in a quick shell script"
+notebook: dev
+identifier: 20210102133703-3479
+occurred_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2021-01-02 18:37:03.000000000 Z
+  zone: &1 !ruby/object:ActiveSupport::TimeZone
+    name: America/New_York
+  time: 2021-01-02 13:37:03.000000000 Z
+metadata: 
+kind: 
+source: 
+url: 
+latitude: 
+longitude: 
+ended_at: 
+created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2021-01-02 18:38:11.260991000 Z
+  zone: *1
+  time: 2021-01-02 13:38:11.260991000 Z
+updated_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2021-01-02 21:41:12.100569000 Z
+  zone: *1
+  time: 2021-01-02 16:41:12.100569000 Z
+summary: 
+subject: 
+from: 
+to: 
+in_reply_to: 20210102074115-w645
+state: 
+hide: false

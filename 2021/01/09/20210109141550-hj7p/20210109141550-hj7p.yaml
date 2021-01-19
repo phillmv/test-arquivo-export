@@ -1,0 +1,26 @@
+---
+notebook: dev
+body: "#gitsync \r\n\r\nlast time i got basic sync working:\r\n\r\n- can pull, and
+  resolve conflicts\r\n\r\nbut they're not run automatically and not yet tied together,
+  i.e.\r\n\r\n- doesn't auto push on a background job\r\n- doesn't auto pull on a
+  background job\r\n- does it auto resolve?\r\n- needs to have the remote be configurable\r\n-
+  lots of clean up around instantiating a new repo\r\n\r\nand look at that the boy
+  is awake!"
+metadata: 
+kind: 
+source: 
+url: 
+latitude: 
+longitude: 
+occurred_at: 2021-01-09 14:15:50.000000000 -05:00
+ended_at: 
+created_at: 2021-01-09 14:19:37.344725000 -05:00
+updated_at: 2021-01-09 14:19:37.344725000 -05:00
+summary: 
+identifier: 20210109141550-hj7p
+subject: 
+from: 
+to: 
+in_reply_to: 20210103133700-c6j5
+state: 
+hide: false
