@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2021-01-18T15:31:33+00:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title/>
+    <link rel="alternate" href="http://blog.url.com/test-middleman-actions/20210118103133-pj9r/"/>
+    <id>http://blog.url.com/test-middleman-actions/20210118103133-pj9r/</id>
+    <published>2021-01-18T15:31:33+00:00</published>
+    <updated>2021-01-19T15:56:44+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p data-sourcepos="1:1-1:156"&gt;been working on a middleman compilation github action to automatically convert arquivo entries into static webpages so i can share my notes with colleagues.&lt;/p&gt;
+&lt;p data-sourcepos="3:1-3:32"&gt;let's call this……&lt;a href="/test-middleman-actions/tags/webexport/"&gt; #webexport&lt;/a&gt;&lt;/p&gt;
+&lt;p data-sourcepos="5:1-5:107"&gt;the idea is that it would also make it super easy to create a tumblelog / mood board directly from arquivo.&lt;/p&gt;
+&lt;p data-sourcepos="7:1-7:208"&gt;i've gotten quite far; i've exported the stylesheet, the layout, the precise markdown settings i use here. remaining step i think is converting directly from arquivo entry yaml to middleman blog post entries.&lt;/p&gt;
+&lt;p data-sourcepos="9:1-9:174"&gt;one way to achieve this would be a simple converter - dir[*] across the yaml files and output new entries - but why do that when i could just have it read the files directly?&lt;/p&gt;
+&lt;p data-sourcepos="11:1-11:45"&gt;/me goes looking inside the guts of middleman&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title/>
+    <link rel="alternate" href="http://blog.url.com/test-middleman-actions/20210109160430-53gj/"/>
+    <id>http://blog.url.com/test-middleman-actions/20210109160430-53gj/</id>
+    <published>2021-01-09T21:04:30+00:00</published>
+    <updated>2021-01-19T15:56:44+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p data-sourcepos="1:1-1:9"&gt;&lt;a href="/test-middleman-actions/tags/gitsync/"&gt;#gitsync&lt;/a&gt;&lt;/p&gt;
+&lt;ul data-sourcepos="3:1-3:67"&gt;
+&lt;li data-sourcepos="3:1-3:67"&gt;git pull needs to look up current branch / not assume it's master&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title/>
+    <link rel="alternate" href="http://blog.url.com/test-middleman-actions/20210109141550-hj7p/"/>
+    <id>http://blog.url.com/test-middleman-actions/20210109141550-hj7p/</id>
+    <published>2021-01-09T19:15:50+00:00</published>
+    <updated>2021-01-19T15:56:44+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p data-sourcepos="1:1-1:9"&gt;&lt;a href="/test-middleman-actions/tags/gitsync/"&gt;#gitsync&lt;/a&gt;&lt;/p&gt;
+&lt;p data-sourcepos="3:1-3:35"&gt;last time i got basic sync working:&lt;/p&gt;
+&lt;ul data-sourcepos="5:1-6:0"&gt;
+&lt;li data-sourcepos="5:1-6:0"&gt;can pull, and resolve conflicts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p data-sourcepos="7:1-7:65"&gt;but they're not run automatically and not yet tied together, i.e.&lt;/p&gt;
+&lt;ul data-sourcepos="9:1-14:0"&gt;
+&lt;li data-sourcepos="9:1-9:39"&gt;doesn't auto push on a background job&lt;/li&gt;
+&lt;li data-sourcepos="10:1-10:39"&gt;doesn't auto pull on a background job&lt;/li&gt;
+&lt;li data-sourcepos="11:1-11:23"&gt;does it auto resolve?&lt;/li&gt;
+&lt;li data-sourcepos="12:1-12:42"&gt;needs to have the remote be configurable&lt;/li&gt;
+&lt;li data-sourcepos="13:1-14:0"&gt;lots of clean up around instantiating a new repo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p data-sourcepos="15:1-15:34"&gt;and look at that the boy is awake!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title/>
+    <link rel="alternate" href="http://blog.url.com/test-middleman-actions/20210109135948-mg7c/"/>
+    <id>http://blog.url.com/test-middleman-actions/20210109135948-mg7c/</id>
+    <published>2021-01-09T18:59:48+00:00</published>
+    <updated>2021-01-19T15:56:44+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p data-sourcepos="1:1-1:32"&gt;i might have a whole ten minutes&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title/>
+    <link rel="alternate" href="http://blog.url.com/test-middleman-actions/20210103133700-c6j5/"/>
+    <id>http://blog.url.com/test-middleman-actions/20210103133700-c6j5/</id>
+    <published>2021-01-03T18:37:00+00:00</published>
+    <updated>2021-01-19T15:56:44+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p data-sourcepos="1:1-1:9"&gt;&lt;a href="/test-middleman-actions/tags/gitsync/"&gt;#gitsync&lt;/a&gt;&lt;/p&gt;
+&lt;p data-sourcepos="3:1-3:94"&gt;:thinking: should have some sort of verification that we're actually adjudicating two entries.&lt;/p&gt;
+&lt;pre data-sourcepos="5:1-18:3"&gt;&lt;code&gt;require 'pry'
+require 'yaml'
+
+ours = YAML.load_file(ARGV[1])["updated_at"]
+theirs = YAML.load_file(ARGV[2])["updated_at"]
+
+if ours &amp;lt; theirs
+  FileUtils.cp(ARGV[2], ARGV[1])
+end
+
+FileUtils.cp(winner[1], ARGV[1]) unless winner == ARGV[1]
+exit 0
+&lt;/code&gt;&lt;/pre&gt;</content>
+  </entry>
+  <entry>
+    <title/>
+    <link rel="alternate" href="http://blog.url.com/test-middleman-actions/20210102133703-3479/"/>
+    <id>http://blog.url.com/test-middleman-actions/20210102133703-3479/</id>
+    <published>2021-01-02T18:37:03+00:00</published>
+    <updated>2021-01-19T15:56:44+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p data-sourcepos="1:1-1:9"&gt;&lt;a href="/test-middleman-actions/tags/gitsync/"&gt;#gitsync&lt;/a&gt;&lt;/p&gt;
+&lt;p data-sourcepos="3:1-3:10"&gt;git/config&lt;/p&gt;
+&lt;pre data-sourcepos="4:1-9:3"&gt;&lt;code&gt;[merge "last-in-wins"]
+  name = last in wins
+  driver = /usr/local/bin/chruby-exec ruby-2.6.5 -- ruby /tmp/merger.rb %O %A %B %L %P
+  recursive = text
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-sourcepos="11:1-11:70"&gt;&lt;a href="https://git-scm.com/docs/gitattributes#_defining_a_custom_merge_driver"&gt;https://git-scm.com/docs/gitattributes#_defining_a_custom_merge_driver&lt;/a&gt;&lt;/p&gt;
+&lt;p data-sourcepos="13:1-13:23"&gt;also git pull --no-edit&lt;/p&gt;
+&lt;p data-sourcepos="15:1-15:47"&gt;(gotta write the winner to the location in &lt;code&gt;%A&lt;/code&gt;&lt;/p&gt;
+&lt;pre data-sourcepos="16:1-28:3"&gt;&lt;code&gt;require 'pry'
+require 'yaml'
+require 'active_support/time_with_zone'
+
+ours = [YAML.load_file(ARGV[1]), ARGV[1]]
+theirs = [YAML.load_file(ARGV[2]), ARGV[2]]
+
+winner = [ours,theirs].sort_by { |attr, file| attr["updated_at"] }.last[1]
+
+FileUtils.cp(winner[1], ARGV[1]) unless winner == ARGV[1]
+exit 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-sourcepos="30:1-30:18"&gt;issues to resolve:&lt;/p&gt;
+&lt;p data-sourcepos="32:1-33:50"&gt;auto installing this custom merger in the git repos&lt;br&gt;
+reliably fucking executing it jfc is another issue&lt;/p&gt;
+&lt;p data-sourcepos="35:1-35:93"&gt;&lt;a href="https://stackoverflow.com/questions/7607125/git-merge-conflict-to-always-take-the-newest-file"&gt;https://stackoverflow.com/questions/7607125/git-merge-conflict-to-always-take-the-newest-file&lt;/a&gt;&lt;/p&gt;
+&lt;pre data-sourcepos="37:1-50:3"&gt;&lt;code&gt;#!/bin/sh
+if git merge-file -p -q "$2" "$1" "$3" &amp;gt; /dev/null;
+        then git merge-file "$2" "$1" "$3";
+        else
+                MINE=$(git log --format="%ct" --no-merges "$6" -1 $5);
+                THEIRS=$(git log --format="%ct" --no-merges "$7" -1 $5);
+                if [ $MINE -gt $THEIRS ]; then
+                  git merge-file -q --ours "$2" "$1" "$3" &amp;gt;/dev/null
+                else
+                  git merge-file -q --theirs "$2" "$1" "$3"&amp;gt;/dev/null
+                fi
+fi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-sourcepos="52:1-52:42"&gt;&lt;code&gt;git-merge-newest %O %A %B %L %P $HEAD $1&lt;/code&gt;&lt;/p&gt;
+&lt;pre data-sourcepos="54:1-59:3"&gt;&lt;code&gt;[merge "newest"]
+  name = foo
+  driver = /usr/local/bin/chruby-exec ruby-2.6.5 -- ruby /tmp/pry.rb %O %A %B %L %P `git rev-parse --abbrev-ref HEAD` $1
+  recursive = text
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr data-sourcepos="61:1-62:0"&gt;
+&lt;p data-sourcepos="63:1-63:34"&gt;okay so i have a few options here.&lt;/p&gt;
+&lt;p data-sourcepos="65:1-65:65"&gt;i need to run merge and if it conflicts pick the most recent one.&lt;/p&gt;
+&lt;ul data-sourcepos="67:1-73:0"&gt;
+&lt;li data-sourcepos="67:1-67:29"&gt;pick between ruby and shell&lt;/li&gt;
+&lt;li data-sourcepos="68:1-73:0"&gt;pick between using git log time, file mtime, or entry updated_at
+&lt;ul data-sourcepos="69:3-73:0"&gt;
+&lt;li data-sourcepos="69:3-69:162"&gt;actually, &lt;a href="https://git.wiki.kernel.org/index.php/GitFaq#Why_isn.27t_Git_preserving_modification_time_on_files.3F"&gt;looks like file mtime in git is unreliable&lt;/a&gt;?&lt;/li&gt;
+&lt;li data-sourcepos="70:3-70:72"&gt;problem: git log time only has second resolution, which breaks tests&lt;/li&gt;
+&lt;li data-sourcepos="71:3-73:0"&gt;on the other time, could just use ruby
+&lt;ul data-sourcepos="72:5-73:0"&gt;
+&lt;li data-sourcepos="72:5-73:0"&gt;problem there: limited in what code can be used in ad hoc git repo installs. i.e. right now entry dumps depends on active_support/time_with_zone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p data-sourcepos="74:1-74:132"&gt;might have to redo how entry yaml is generated to eschew time_with_zone, so that i can just &lt;code&gt;require 'yaml'&lt;/code&gt; in a quick shell script&lt;/p&gt;</content>
+  </entry>
+</feed>
